@@ -55,7 +55,7 @@
                   <strong><%= flight.departureAirport %></strong> → <strong><%= flight.arrivalAirport %></strong>
                 </div>
                 <p class="card-text small text-muted">
-                  <i class="fas fa-clock me-1"></i> <%= flight.departureTime %> - <%= flight.arrivalTime %>
+                  <i class="fas fa-clock me-1"></i><%= flight.hours %>:<%= flight.minutes %>
                 </p>
                 <% if (flight.aircraftType) { %>
                   <p class="card-text small text-info">
