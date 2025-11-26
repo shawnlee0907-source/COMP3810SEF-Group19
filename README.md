@@ -135,18 +135,18 @@ curl -c cookie.txt -X POST https://comp3810sef-group19-vubv.onrender.com/login \
 curl -b cookie.txt https://comp3810sef-group19-vubv.onrender.com/api/flights
 ```
 
-#### 3. Read Specific Flight
-```bash
-curl -b cookie.txt https://comp3810sef-group19-vubv.onrender.com/api/flights/FLIGHT_NUMBER
-```
-
-#### 4. Create Flight
+#### 3. Create Flight
 ```bash
 curl -b cookie.txt -X POST https://comp3810sef-group19-vubv.onrender.com/api/flights \
      -F "flightNumber=CX225" \
      -F "airline=Cathay Pacific" \
      -F "departureAirport=HKG" \
      -F "arrivalAirport=NRT"
+```
+
+#### 4. Read Specific Flight (e.g. CX225)
+```bash
+curl -b cookie.txt https://comp3810sef-group19-vubv.onrender.com/api/flights/CX225
 ```
 
 #### 5. Update Flight
