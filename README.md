@@ -160,27 +160,7 @@ curl -b cookie.txt -X PUT https://comp3810sef-group19-vubv.onrender.com/api/flig
 ```bash
 curl -b cookie.txt -X DELETE https://comp3810sef-group19-vubv.onrender.com/api/flights/CX225
 ```
-
-## Security Features
-
-- Password hashing with bcrypt
-- Session-based authentication
-- User data isolation
-- Protected routes middleware
-- Secure file upload handling
-
-## Data Management
-
-- Each user only sees their own flights
-- MongoDB document-based storage
-- Base64 image encoding for flight photos
-- Automatic sorting by creation date (newest first)
-
-## Development Features
-
-- MVC-like architecture
-- RESTful API design
-- Form data validation
-- Error handling
-- Responsive web interface
-
+#### 7. Check after delete
+```bash
+curl -b cookie.txt https://comp3810sef-group19-vubv.onrender.com/api/flights/CX225
+```
